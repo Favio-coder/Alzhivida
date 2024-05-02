@@ -1,0 +1,576 @@
+{
+	"info": {
+		"_postman_id": "587efd60-8b93-4648-8044-a75cb45e320b",
+		"name": "MongoDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33411505"
+	},
+	"item": [
+		{
+			"name": "Colección pruebas",
+			"item": [
+				{
+					"name": "Obtener JSON de pruebas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/pruebas",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"pruebas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener JSON de pruebas con ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/pruebas/663267e557872fec5d383efa",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"pruebas",
+								"663267e557872fec5d383efa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mandar JSON a pruebas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"Edad\": \"19\",\r\n        \"_id\": \"663267e557872fec5d383efa\",\r\n        \"apellido\": \"apellido1\",\r\n        \"nombre\": \"nombre1\"\r\n    },\r\n    {\r\n        \"Edad\": \"19\",\r\n        \"_id\": \"663267e657872fec5d383efb\",\r\n        \"apellido\": \"apellido2\",\r\n        \"nombre\": \"nombre2\"\r\n    },\r\n    {\r\n        \"Edad\": \"19\",\r\n        \"_id\": \"663267e757872fec5d383efc\",\r\n        \"apellido\": \"apellido3\",\r\n        \"nombre\": \"nombre3\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/pruebas",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"pruebas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar JSON de pruebas",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Edad\": \"20\",\r\n    \"apellido\": \"Medina\",\r\n    \"nombre\": \"Fabio\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/pruebas/663267e557872fec5d383efa",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"pruebas",
+								"663267e557872fec5d383efa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar JSON de pruebas",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/pruebas/663267e757872fec5d383efc",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"pruebas",
+								"663267e757872fec5d383efc"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Colección preguntas",
+			"item": [
+				{
+					"name": "Obtener JSON de preguntas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/preguntas",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"preguntas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener JSON de preguntas con ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/preguntas/663267e557872fec5d383efa",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"preguntas",
+								"663267e557872fec5d383efa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mandar JSON a preguntas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"Edad\": \"19\",\r\n        \"_id\": \"663267e557872fec5d383efa\",\r\n        \"apellido\": \"apellido1\",\r\n        \"nombre\": \"nombre1\"\r\n    },\r\n    {\r\n        \"Edad\": \"19\",\r\n        \"_id\": \"663267e657872fec5d383efb\",\r\n        \"apellido\": \"apellido2\",\r\n        \"nombre\": \"nombre2\"\r\n    },\r\n    {\r\n        \"Edad\": \"19\",\r\n        \"_id\": \"663267e757872fec5d383efc\",\r\n        \"apellido\": \"apellido3\",\r\n        \"nombre\": \"nombre3\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/preguntas",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"preguntas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar JSON de preguntas",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Edad\": \"20\",\r\n    \"apellido\": \"Medina\",\r\n    \"nombre\": \"Fabio\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/preguntas/663267e557872fec5d383efa",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"preguntas",
+								"663267e557872fec5d383efa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar JSON de preguntas",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/preguntas/663267e757872fec5d383efc",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"preguntas",
+								"663267e757872fec5d383efc"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Colección respuestas",
+			"item": [
+				{
+					"name": "Obtener JSON de respuestas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/respuestas",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"respuestas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener JSON de respuestas con ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/respuestas/663267e557872fec5d383efa",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"respuestas",
+								"663267e557872fec5d383efa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MandarJSON a respuestas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"Edad\": \"19\",\r\n        \"_id\": \"663267e557872fec5d383efa\",\r\n        \"apellido\": \"apellido1\",\r\n        \"nombre\": \"nombre1\"\r\n    },\r\n    {\r\n        \"Edad\": \"19\",\r\n        \"_id\": \"663267e657872fec5d383efb\",\r\n        \"apellido\": \"apellido2\",\r\n        \"nombre\": \"nombre2\"\r\n    },\r\n    {\r\n        \"Edad\": \"19\",\r\n        \"_id\": \"663267e757872fec5d383efc\",\r\n        \"apellido\": \"apellido3\",\r\n        \"nombre\": \"nombre3\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/respuestas",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"respuestas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar JSON de respuestas",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Edad\": \"20\",\r\n    \"apellido\": \"Medina\",\r\n    \"nombre\": \"Fabio\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/respuestas/663267e557872fec5d383efa",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"respuestas",
+								"663267e557872fec5d383efa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar JSON de respuestas",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/respuestas/663267e757872fec5d383efc",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"respuestas",
+								"663267e757872fec5d383efc"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Colección training",
+			"item": [
+				{
+					"name": "Obtener JSON de training",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/training",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"training"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener JSON de training con ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/training/663267e557872fec5d383efa",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"training",
+								"663267e557872fec5d383efa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MandarJSON a training",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"Edad\": \"19\",\r\n        \"_id\": \"663267e557872fec5d383efa\",\r\n        \"apellido\": \"apellido1\",\r\n        \"nombre\": \"nombre1\"\r\n    },\r\n    {\r\n        \"Edad\": \"19\",\r\n        \"_id\": \"663267e657872fec5d383efb\",\r\n        \"apellido\": \"apellido2\",\r\n        \"nombre\": \"nombre2\"\r\n    },\r\n    {\r\n        \"Edad\": \"19\",\r\n        \"_id\": \"663267e757872fec5d383efc\",\r\n        \"apellido\": \"apellido3\",\r\n        \"nombre\": \"nombre3\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/training",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"training"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar JSON de training",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Edad\": \"20\",\r\n    \"apellido\": \"Medina\",\r\n    \"nombre\": \"Fabio\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/training/663267e557872fec5d383efa",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"training",
+								"663267e557872fec5d383efa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar JSON de training",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/training/663267e757872fec5d383efc",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"training",
+								"663267e757872fec5d383efc"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Establecer conexión",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/conexion",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"conexion"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
