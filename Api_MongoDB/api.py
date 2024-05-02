@@ -163,7 +163,7 @@ class Datos(Resource):
 
 api.add_resource(Conexion, '/conexion')
 api.add_resource(Datos, '/pruebas', '/pruebas/<string:id>')
-api.add_resource(Datos_preguntas, '/preguntas', 'preguntas/<string:id>')
+api.add_resource(Datos_preguntas, '/preguntas', '/preguntas/<string:id>')
 api.add_resource(Datos_respuestas, '/respuestas', '/respuestas/<string:id>')
 api.add_resource(Datos_training, '/training', '/training/<string:id>')
 
