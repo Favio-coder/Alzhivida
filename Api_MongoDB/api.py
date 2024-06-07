@@ -7,7 +7,7 @@ app = Flask(__name__)
 api = Api(app)
 
 # URI de conexión a la base de datos
-uri = "mongodb+srv://alzhivida:RaWKHqs9L9X6vWTg@datasets.zyv34gg.mongodb.net/?retryWrites=true&w=majority&appName=datasets"
+uri = "mongodb+srv://alzhivda_juan:FDKLUg8wd2N4rXHk@datasets.zyv34gg.mongodb.net/?retryWrites=true&w=majority&appName=datasets"
 
 # Crear una conexión a la base de datos
 client = MongoClient(uri)
@@ -22,7 +22,7 @@ class Conexion(Resource):
         try:
             # Verificar la conexión a la base de datos
             client.server_info()
-            return {"message": "Conexión a la base de datos exitosa"}, 200
+            return {"message": "Conexión a la base de datos exitosa c:"}, 200
         except Exception as e:
             return {"message": "Error al conectar a la base de datos", "error": str(e)}, 500
         
